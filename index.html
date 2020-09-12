@@ -8,15 +8,54 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/simple.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<style>
+			.device_icon {
+				position: absolute;
+				top: 30%;
+				left: 30%;
+				font-size: 18px;
+			}
+			.device_icon img {
+				margin: 0;
+			}
+			.device_icon p {
+				margin: 0;
+			}
+			.instructions {
+				display: inline-block;
+				vertical-align: top;
+				padding-top: 30%;
+			}
+			.device {
+				display: inline-block;
+				height: 100%;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section>
+					<div class="r-stretch">
+						<div class="device">
+							<img src="img/phone.svg"/>
+							<div class="device_icon">
+								<img src="img/icon.svg" />
+								<p>Settings</p>
+							</div>
+						</div>
+						<div class="instructions">
+							<ol>
+								<li>Tap the Settings Icon</li>
+							</ol>
+						</div>
+					</div>
+					
+				</section>
 				<section>Slide 2</section>
 			</div>
 		</div>
